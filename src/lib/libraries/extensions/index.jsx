@@ -16,6 +16,8 @@ import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
+import deepLearning from './deeplearning.png';
+import deepLearningImage from './deeplearning-small.svg';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -233,5 +235,28 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
-    }
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="DeepLearning"
+                description="Name for the 'Deep Learning' extension"
+                id="gui.extension.deeplearning.name"
+            />
+        ),
+        extensionId: 'deepLearning',
+        iconURL: deepLearning,
+        insetIconURL: deepLearningImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Definition deep learning model with tensorflow"
+                description="Description for the 'Deep Learning' extension"
+                id="gui.extension.deeplearning.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false
+    },
 ];
