@@ -18,6 +18,8 @@ import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
 import deepLearning from './deeplearning.png';
 import deepLearningImage from './deeplearning-small.svg';
+import bigData from './bigdata.png';
+import bigDataImage from './bigdata-small.svg';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -252,6 +254,29 @@ export default [
                 defaultMessage="Definition deep learning model with tensorflow"
                 description="Description for the 'Deep Learning' extension"
                 id="gui.extension.deeplearning.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="BigData"
+                description="Name for the 'Deep Learning' extension"
+                id="gui.extension.bigdata.name"
+            />
+        ),
+        extensionId: 'bigData',
+        iconURL: bigData,
+        insetIconURL: bigDataImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Preprocessing for bigdata"
+                description="Description for the 'Deep Learning' extension"
+                id="gui.extension.bigdata.description"
             />
         ),
         featured: true,
